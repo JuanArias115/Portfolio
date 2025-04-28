@@ -20,4 +20,4 @@ It is fully responsive, with a clean, minimalistic design focused on showcasing 
 
 ## Live Demo
 
-[[Visit my portfolio](https://juanariasdev.com/)](#) 
+[Visit my portfolio](https://juanariasdev.com/)(#) 
