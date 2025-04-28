@@ -1,0 +1,136 @@
+<section
+  class="py-38 px-4 sm:px-6 lg:px-8 bg-white text-neutral-900"
+  id="about"
+>
+  <h2
+    class="text-3xl font-semibold flex items-center justify-center gap-3 mb-12 text-center"
+  >
+    <lucide-icon
+      [img]="UserIcon"
+      class="w-6 h-6 text-neutral-800"
+    ></lucide-icon>
+    {{
+      {
+        en: "About Me",
+        de: "Über mich",
+        es: "Sobre mí"
+      } | i18n
+    }}
+  </h2>
+  <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-10">
+    <!-- Imagen grande al lado izquierdo -->
+    <img
+      src="/Casual_Juan_David_Arias.jpeg"
+      alt="Juan David"
+      class="w-full md:w-1/2 rounded-xl shadow-md object-cover max-h-[450px]"
+    />
+
+    <!-- Texto a la derecha -->
+    <div class="md:w-1/2 space-y-5 text-left">
+      <p class="text-sm sm:text-base text-neutral-700 leading-relaxed">
+        {{
+          {
+            en: "I'm",
+            de: "Ich bin",
+            es: "Soy"
+          } | i18n
+        }}
+        <strong>Juan David Arias</strong>,
+        {{
+          {
+            en: "a passionate software developer who took his first steps in tech by programming an",
+            de: "ein leidenschaftlicher Softwareentwickler, der seine ersten Schritte in der Technik machte, indem er ein",
+            es: "un desarrollador de software apasionado que dio sus primeros pasos en tecnología, programando una"
+          } | i18n
+        }}
+        <strong>{{
+          {
+            en: "Arduino board with C++",
+            de: "Arduino-Platine mit C++",
+            es: "placa Arduino con C++"
+          } | i18n
+        }}</strong>
+        {{
+          {
+            en: "for personal projects.",
+            de: "für persönliche Projekte.",
+            es: "para proyectos personales."
+          } | i18n
+        }}
+      </p>
+      <p class="text-sm sm:text-base text-neutral-700 leading-relaxed">
+        {{
+          {
+            en: "I had the opportunity to begin my professional journey as a",
+            de: "Ich hatte die Möglichkeit, meine berufliche Laufbahn zu beginnen als",
+            es: "Tuve la oportunidad de comenzar mi carrera profesional como"
+          } | i18n
+        }}
+        <strong>{{
+          {
+            en: "full-stack developer",
+            de: "Full-Stack-Entwickler",
+            es: "desarrollador full-stack"
+          } | i18n
+        }}</strong
+        >,
+        {{
+          {
+            en: "working with",
+            de: "und arbeitete mit",
+            es: "trabajando con"
+          } | i18n
+        }}
+        <strong>{{
+          {
+            en: ".NET and Angular",
+            de: ".NET und Angular",
+            es: ".NET y Angular"
+          } | i18n
+        }}</strong>
+        {{
+          {
+            en: "to design and build new features.",
+            de: "um neue Funktionen zu entwerfen und zu entwickeln.",
+            es: "para diseñar y construir nuevas funcionalidades."
+          } | i18n
+        }}
+      </p>
+
+      <p class="text-sm sm:text-base text-neutral-700 leading-relaxed">
+        {{
+          {
+            en: "Later on, I ventured into",
+            de: "Später habe ich mich in",
+            es: "Más adelante, incursioné en"
+          } | i18n
+        }}
+        <strong>{{
+          {
+            en: "mobile development",
+            de: "Mobile-Entwicklung",
+            es: "desarrollo móvil"
+          } | i18n
+        }}</strong
+        >,
+        {{
+          {
+            en: "where I built several projects and developed a",
+            de: "wo ich mehrere Projekte entwickelte und eine",
+            es: "donde desarrollé varios proyectos y adquirí una"
+          } | i18n
+        }}
+        <strong>{{
+          {
+            en: "solid foundation in Flutter",
+            de: "solide Grundlage in Flutter",
+            es: "sólida base en Flutter"
+          } | i18n
+        }}</strong
+        >.
+      </p>
+
+      <!-- Tecnologías destacadas -->
+    </div>
+  </div>
+</section>

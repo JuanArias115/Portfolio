@@ -1,0 +1,132 @@
+<header class="w-full bg-white border-b border-gray-200 fixed top-0 z-50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-center items-center h-16 relative">
+      <!-- Navegación desktop centrada -->
+      <nav class="hidden md:flex space-x-8">
+        <a
+          href="#work-experience"
+          class="text-neutral-700 hover:text-blue-500 transition"
+        >
+          {{
+            { en: "Experience", de: "Erfahrung", es: "Experiencia" } | i18n
+          }}</a
+        >
+        <a
+          href="#projects"
+          class="text-neutral-700 hover:text-blue-500 transition"
+          >{{ { en: "Projects", de: "Projekte", es: "Proyectos" } | i18n }}
+        </a>
+        <a
+          href="#about"
+          class="text-neutral-700 hover:text-blue-500 transition"
+          >{{ { en: "About Me", de: "Über mich", es: "Sobre mí" } | i18n }}</a
+        >
+        <!-- <a
+          href="#contact"
+          class="text-neutral-700 hover:text-blue-500 transition"
+          >{{ { en: "Contact", de: "Kontakt", es: "Contacto" } | i18n }}</a
+        > -->
+      </nav>
+
+      <!-- Selector de idioma (esquina derecha en desktop) -->
+      <div
+        class="absolute right-16 hidden md:flex items-center space-x-2 text-sm"
+      >
+        <button
+          (click)="setLanguage('es')"
+          class="text-neutral-600 hover:text-blue-500 transition"
+        >
+          ES
+        </button>
+        <span class="text-neutral-400">/</span>
+        <button
+          (click)="setLanguage('en')"
+          class="text-neutral-600 hover:text-blue-500 transition"
+        >
+          EN
+        </button>
+        <span class="text-neutral-400">/</span>
+        <button
+          (click)="setLanguage('de')"
+          class="text-neutral-600 hover:text-blue-500 transition"
+        >
+          DE
+        </button>
+      </div>
+
+      <!-- Botón menú hamburguesa en móvil -->
+      <div class="absolute right-4 md:hidden">
+        <button
+          (click)="toggleMenu()"
+          class="text-neutral-700 focus:outline-none"
+          aria-label="Abrir menú"
+        >
+          <svg
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path *ngIf="!isMenuOpen" d="M4 6h16M4 12h16M4 18h16" />
+            <path *ngIf="isMenuOpen" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Menú desplegable móvil -->
+  <div
+    *ngIf="isMenuOpen"
+    class="md:hidden border-t border-gray-200 bg-white px-4"
+  >
+    <a
+      href="#work-experience"
+      class="block py-2 text-neutral-700 hover:text-blue-500 transition"
+      >{{ { en: "Experience", de: "Erfahrung", es: "Experiencia" } | i18n }}</a
+    >
+    <a
+      href="#projects"
+      class="block py-2 text-neutral-700 hover:text-blue-500 transition"
+      >{{ { en: "Projects", de: "Projekte", es: "Proyectos" } | i18n }}</a
+    >
+    <a
+      href="#about"
+      class="block py-2 text-neutral-700 hover:text-blue-500 transition"
+      >{{ { en: "About Me", de: "Über mich", es: "Sobre mí" } | i18n }}</a
+    >
+    <!-- <a
+      href="#contact"
+      class="block py-2 text-neutral-700 hover:text-blue-500 transition"
+      >{{ { en: "Contact", de: "Kontakt", es: "Contacto" } | i18n }}</a
+    > -->
+
+    <!-- Selector de idioma en móvil -->
+    <div class="flex justify-center space-x-4 py-4 border-t border-gray-100">
+      <button
+        (click)="setLanguage('en')"
+        class="text-xl hover:scale-110 transition"
+        aria-label="English"
+      >
+        EN
+      </button>
+      <button
+        (click)="setLanguage('de')"
+        class="text-xl hover:scale-110 transition"
+        aria-label="Deutsch"
+      >
+        DE
+      </button>
+      <button
+        (click)="setLanguage('es')"
+        class="text-xl hover:scale-110 transition"
+        aria-label="Español"
+      >
+        ES
+      </button>
+    </div>
+  </div>
+</header>

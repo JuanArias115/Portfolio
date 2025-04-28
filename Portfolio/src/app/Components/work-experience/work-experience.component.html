@@ -1,0 +1,73 @@
+<section
+  class="py-16 px-4 sm:px-6 lg:px-8 bg-white text-neutral-900"
+  id="experience"
+>
+  <div class="max-w-5xl mx-auto">
+    <h2
+      class="text-3xl font-semibold mb-10 text-center flex items-center justify-center gap-3"
+    >
+      <lucide-icon
+        [img]="BriefcaseIcon"
+        class="w-6 h-6 text-neutral-800"
+      ></lucide-icon>
+      {{
+        {
+          en: "Work Experience",
+          de: "Berufserfahrung",
+          es: "Experiencia Laboral"
+        } | i18n
+      }}
+    </h2>
+
+    <div class="relative border-l border-gray-300 pl-8 space-y-12">
+      <!-- Punto de experiencia -->
+      <div class="relative">
+        <!-- Punto azul en la línea -->
+        <div
+          class="absolute -left-3 top-4 w-3 h-3 rounded-full bg-blue-500 border-2 border-white shadow-md"
+        ></div>
+
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-6 ms-4">
+          <!-- Columna izquierda -->
+          <div class="md:col-span-1">
+            <h3 class="text-sm font-semibold text-neutral-900">
+              Effective Computer Solutions S.A.S
+            </h3>
+            <p class="text-xs text-neutral-500">
+              {{
+                {
+                  en: "Software Developer · Full-time",
+                  de: "Softwareentwickler · Vollzeit",
+                  es: "Desarrollador de Software · Tiempo completo"
+                } | i18n
+              }}
+            </p>
+            <p class="text-xs text-neutral-400 mt-1">
+              2022 – 2025 <br />
+              {{
+                {
+                  en: "Bogotá, Colombia",
+                  de: "Bogotá, Kolumbien",
+                  es: "Bogotá, Colombia"
+                } | i18n
+              }}
+            </p>
+          </div>
+
+          <!-- Columna derecha -->
+          <div class="md:col-span-3 max-w-prose">
+            <p class="text-xs text-neutral-700 leading-relaxed">
+              {{
+                {
+                  en: "Developed and maintained web and mobile applications using .NET, Angular, and SQL Server. Implemented new features and optimized performance by applying development best practices. Followed SOLID principles to ensure clean and scalable code. Delivered a complete mobile solution and managed database tasks.",
+                  de: "Web- und Mobile-Anwendungen mit .NET, Angular und SQL Server entwickelt und gewartet. Neue Funktionen implementiert und die Leistung durch bewährte Entwicklungspraktiken optimiert. SOLID-Prinzipien befolgt, um sauberen und skalierbaren Code zu gewährleisten. Eine vollständige mobile Lösung entwickelt und Datenbankaufgaben verwaltet.",
+                  es: "Desarrollé y mantuve aplicaciones web y móviles utilizando .NET, Angular y SQL Server. Implementé nuevas funcionalidades y optimicé el rendimiento aplicando buenas prácticas de desarrollo. Seguí los principios SOLID para asegurar un código limpio y escalable. Desarrollé una solución móvil completa y gestioné tareas de base de datos."
+                } | i18n
+              }}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

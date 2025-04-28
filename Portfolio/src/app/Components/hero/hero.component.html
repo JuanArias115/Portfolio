@@ -1,0 +1,109 @@
+<section
+  class="min-h-screen flex flex-col justify-center items-center text-center px-4 bg-white text-neutral-900"
+>
+  <!-- Imagen -->
+  <img
+    src="https://media.licdn.com/dms/image/v2/D4E03AQEwDBQbj9Sk6g/profile-displayphoto-shrink_800_800/B4EZVYxqXPG0Ac-/0/1740951168896?e=1750291200&v=beta&t=oHtXVmZGoXBeMbbOGGLNt3XWLjBWwmrGwDl9u6R4Ubk"
+    alt="Picture de Juan David"
+    class="w-36 h-36 rounded-full mb-4 shadow-sm object-cover"
+  />
+
+  <!-- Estado + Ubicación -->
+  <div class="flex items-center space-x-2 mb-3">
+    <!-- Estado -->
+    <span
+      class="inline-block px-3 py-1 text-sm text-green-800 bg-green-100 border border-green-200 rounded-full"
+    >
+      {{ { en: "Available", de: "Verfügbar", es: "Disponible" } | i18n }}
+    </span>
+
+    <!-- Ubicación -->
+    <div class="flex items-center text-sm text-neutral-600">
+      <!-- Icono de localización -->
+      <lucide-icon
+        [img]="MapPinIcon"
+        class="w-5 h-5 text-red-500"
+      ></lucide-icon>
+      <p class="ms-2">
+        {{
+          {
+            en: "Cologne, Germany",
+            de: "Köln, Deutschland",
+            es: "Colonia, Alemania"
+          } | i18n
+        }}
+      </p>
+    </div>
+  </div>
+
+  <!-- Título principal -->
+  <h1 class="text-4xl md:text-5xl font-semibold mb-4">
+    {{
+      {
+        en: "Hey, I'm Juan David Arias",
+        de: "Hey, ich bin Juan David Arias",
+        es: "Hey, soy Juan David Arias"
+      } | i18n
+    }}
+  </h1>
+
+  <!-- Soy un desarrollador de software colombiano viviendo en Alemania 🇩🇪, apasionado por la tecnología y el desarrollo digital.
+Especializado en Angular, Flutter y .NET. Me encanta construir experiencias limpias, accesibles y eficientes. -->
+
+  <!-- Descripción -->
+  <p class="max-w-xl text-lg text-neutral-700 mb-2">
+    {{
+      {
+        en: "Colombian Software Developer living in Germany 🇩🇪",
+        de: "Kolumbianischer Softwareentwickler, der in Deutschland lebt 🇩🇪",
+        es: "Desarrollador de Software colombiano viviendo en Alemania 🇩🇪"
+      } | i18n
+    }}
+
+    <br />
+    {{
+      {
+        en: "Passionate about technology and digital development",
+        de: "Leidenschaftlich für Technologie und digitale Entwicklung",
+        es: "Apasionado por la tecnología y el desarrollo digital"
+      } | i18n
+    }}
+  </p>
+
+  <!-- Segunda línea -->
+  <p class="max-w-xl text-neutral-500 mb-6">
+    {{
+      {
+        en: "Specialized in Angular, Flutter, and .NET. I love building clean, accessible, and efficient experiences.",
+        de: "Spezialisiert auf Angular, Flutter und .NET. Ich liebe es, saubere, zugängliche und effiziente Erlebnisse zu schaffen.",
+        es: "Especializado en Angular, Flutter y .NET. Me encanta construir experiencias limpias, accesibles y eficientes."
+      } | i18n
+    }}
+  </p>
+
+  <!-- Botones -->
+  <div class="flex flex-wrap justify-center gap-4">
+    <a
+      href="mailto:juanarias.b@outlook.com"
+      class="flex items-center gap-2 px-5 py-2.5 border border-gray-200 rounded-full text-neutral-800 hover:bg-gray-100 transition"
+    >
+      <lucide-icon [img]="MailIcon" class="w-5 h-5"></lucide-icon>
+      {{
+        {
+          en: "Contact Me",
+          de: "Kontaktiere mich",
+          es: "Contáctame"
+        } | i18n
+      }}
+    </a>
+
+    <a
+      href="https://www.linkedin.com/in/juan-david-arias-0818a424b/"
+      target="_blank"
+      class="flex items-center gap-2 px-5 py-2.5 border border-gray-200 rounded-full text-neutral-800 hover:bg-gray-100 transition"
+    >
+      <lucide-icon [img]="LinkedinIcon" class="w-5 h-5"></lucide-icon>
+      LinkedIn
+    </a>
+  </div>
+</section>
